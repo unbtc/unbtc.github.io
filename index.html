@@ -1,0 +1,23 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Hash Function</title>
+</head>
+<body>
+  <h1>Hash Function</h1>
+  <form>
+    <label for="string">String:</label>
+    <input type="text" id="string">
+    <br>
+    <label for="salt">Salt:</label>
+    <input type="text" id="salt">
+    <br>
+    <label for="rounds">Rounds:</label>
+    <input type="number" id="rounds" min="1">
+    <br>
+    <button type="button" onclick="hashString()">Hash</button>
+  </form>
+  <p>Result: <span id="result"></span></p>
+  <script src="hash2.js"></script>
+</body>
+</html>
