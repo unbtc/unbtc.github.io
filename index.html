@@ -6,7 +6,10 @@
 	<meta name="viewport" content="width=device-width, initial-scale=1.0">
 	<title>ふっかつのじゅもん</title>
 	<style>
-		@font-face {  font-family: 'BestTen-DOT';  src: url(BestTen-DOT.otf) format("opentype");}
+		@font-face {
+			font-family: 'BestTen-DOT';
+			src: url(BestTen-DOT.otf) format("opentype");
+		}
 
 		ul {
 			margin: 30px;
@@ -54,13 +57,18 @@
 			color: #FB0
 		}
 
+		#logo {
+			margin: 5px 0;
+		}
+
 		#logo1 {
 			font-size: 2.7em;
-			font-family: 'BestTen-DOT'
+			font-family: 'BestTen-DOT';
+
 		}
 
 		#logo2 {
-			font-size: 0.8em;
+			font-size: 0.5em;
 		}
 
 
@@ -348,12 +356,17 @@ ${originalStyle}
 <body>
 	<div id="header">
 		<div id="pref">
-			<span id="logo1">ふっかつのじゅもん</span>
-			<span id="logo2">（※β版：自己責任）</span>
-			<br>
+			<div id="logo">
+				<span id="logo1">ふっかつのじゅもん</span>
+				<span id="logo2">（※β版：自己責任）</span>
+			</div>
+
 			<em>文字種（半角コンマ区切り）
 				<span id="cnt">
-				</span>種：ワード数 <span id="size-display"></span></em>
+				</span>種：ワード数 <span id="size-display"></span>
+				<a href="https://github.com/unbtc/unbtc.github.io" target="_blank"> CODE </a>
+			</em>
+
 
 			<textarea onchange="updateCount()"
 				id="chars">あ,い,う,え,お,か,き,く,け,こ,さ,し,す,せ,そ,た,ち,つ,て,と,な,に,ぬ,ね,の,は,ひ,ふ,へ,ほ,ま,み,む,め,も,や,ゆ,よ,ら,り,る,れ,ろ,わ,を,ん</textarea>
@@ -482,13 +495,15 @@ ${originalStyle}
 				<p>
 					<em>Base code:
 						<a href="https://x.com/makura645">makura@getalby.co</a> / UX & Update : unbtc / Inspire:
-						<a href="http://github.com/lokuyow">lokuyow@walletofsatoshi.com</a>/titlefont:<a href="https://twitter.com/flopdesign">flopdesign</a>/ donation:
+						<a href="http://github.com/lokuyow">lokuyow@walletofsatoshi.com</a>/titlefont:<a
+							href="https://twitter.com/flopdesign">flopdesign</a>/ donation:
 						<a href="mailto:unbt@getalby.com">LNURL</a>
 					</em><em>免責事項:本ソフトウェアをダウンロード・利用した結果生じるいかなる損害についても、当管理人は責任を負いかねます。ユーザー自身の責任のもとでの利用をお願いいたします。</em>
 				</p>
 			</div>
 		</div>
 	</div>
+
 	<div>
 		<p id="date"></p>
 	</div>
